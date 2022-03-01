@@ -1,12 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MdClose } from 'react-icons/md'
+import ReactDOM, { createPortal } from 'react-dom'
 
 const Background = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,27 +67,28 @@ const CloseModalButton = styled(MdClose)`
   z-index: 10;
 `
 
-export const Modal = ({ showModal, setShowModal }) => {
-  return (
+export const Modal = ({ showModal, setShowModal, project }) => {
+  return ReactDOM.createPortal(
     <>
       {showModal ? (
         <Background>
           <ModalWrapper showModal={showModal}>
-            <ModalImg src={require('../../../src/img/modal.jpg')} />
+            <ModalImg src={project.image} />
             <ModalContent>
-              <h1>Are You Ready ?</h1>
-              <p>Get exclusive access to our net launch </p>
+              <h1>{project.title}</h1>
+              <p>{project.description}</p>
               <button>Join Now</button>
             </ModalContent>
 
             <CloseModalButton
               aria-label="Close modal"
-              onClick={() => setShowModal((prev) => !prev)}
+              onClick={() => setShowModal(prev => !prev)}
             />
           </ModalWrapper>
         </Background>
       ) : null}{' '}
-    </>
+    </>,
+    document.getElementById('portal')
   )
 }
 

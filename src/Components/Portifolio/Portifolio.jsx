@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import './portifolio.css'
 import ViewMore from "./ViewMoreButtun";
+import { projects } from "../../constants/projects";
+import Modal from './Modal'
 
 
 import { Pagination, Scrollbar} from 'swiper'
@@ -12,6 +14,11 @@ import avatar2 from "../../../src/img/project.jfif"
 
 
 const Portifolio = () => {
+  const [showModal, setShowModal] = useState(false)
+
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  }
   return (
     <section id='portifolio'>
       <h5>Review from Clients</h5>
@@ -25,33 +32,22 @@ const Portifolio = () => {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       >
+        {projects.map(project => (
+
         <SwiperSlide className="portfolio__item">
           <div className="portifolio__item-image">
-          <img className="avatar" src={avatar2}/>
+          <img className="avatar" src={project.image}/>
           </div>
 
           <div className="portfolio__item-cta">
-          <ViewMore />
+          <ViewMore openModal={openModal} />
+          <Modal showModal={showModal} setShowModal={setShowModal} project={project}/>
           </div>
 
         </SwiperSlide>
+        ))}
 
-        <SwiperSlide className="portfolio__item">
-          <div className="portifolio__item-image">
-          <img className="avatar" src={avatar2}/>
-          </div>
-
-          <ViewMore />
-        </SwiperSlide>
-
-        <SwiperSlide className="portfolio__item">
-          <div className="portifolio__item-image">
-          <img className="avatar" src={avatar2}/>
-          </div>
-
-          <ViewMore />
-
-        </SwiperSlide>
+       
       </Swiper>
     </section>
   )

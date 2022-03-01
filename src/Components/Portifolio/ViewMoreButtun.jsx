@@ -2,17 +2,11 @@ import React,{useState} from "react";
 import styled from "styled-components";
 import { Modal } from "./Modal";
 
-function ViewMore() {
-
-  const [showModal, setShowModal] = useState(false)
-
-  const openModal = () => {
-    setShowModal(prev => !prev)
-  }
+function ViewMore({openModal}) {
 
   return <ViewMoreStyled>
     <Button onClick={openModal}>I'm a Model</Button>
-    <Modal showModal={showModal} setShowModal={setShowModal}/>
+    
   </ViewMoreStyled>
 }
 
