@@ -1,27 +1,26 @@
 .container.testimonials__container {
-  width: 25%;
-  background: var(--color-bg-variant);
+  width: 100%;
+  /* background: var(--color-bg-variant); */
   border-radius: 30px;
   padding: 2rem;
+  /* display: flex; */
 }
 
-.portfolio__item {
+.portfolio__card {
+  /* background-color: var(--color-primary); */
   display: grid;
+  gap: 1.2rem;
   padding: 1.2rem;
   border-radius: 2rem;
   align-items: center;
+  width: 230px;
 }
 
-.portfolio__item-cta {
-  display: flex;
-  justify-content: center;
-}
-
-.portifolio__item-image img {
+.portifolio__img {
   border-radius: 20px;
-  margin-bottom: 1rem;
 }
-.view-more .portfolio__item-cta {
+
+.view-more .portfolio__card-cta {
   display: block;
   background-color: red;
 }

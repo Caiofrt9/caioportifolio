@@ -19,10 +19,10 @@ const Background = styled.div`
 `
 
 const ModalWrapper = styled.div`
-  width: 800px;
+  width: 90%;
   height: 500px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-  background: #fff;
+  background: var(--color-bg);
   color: #000;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -35,7 +35,7 @@ const ModalImg = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 10px 0 0 10px;
-  background: #000;
+  /* background: #00; */
 `
 
 const ModalContent = styled.div`
@@ -77,7 +77,12 @@ export const Modal = ({ showModal, setShowModal, project }) => {
             <ModalContent>
               <h1>{project.title}</h1>
               <p>{project.description}</p>
-              <button>Join Now</button>
+              <a href=" " download className="btn">
+                DownLoad CV
+              </a>
+              <a href="#contact" className="btn btn-primary">
+                Let's Talk
+              </a>
             </ModalContent>
 
             <CloseModalButton

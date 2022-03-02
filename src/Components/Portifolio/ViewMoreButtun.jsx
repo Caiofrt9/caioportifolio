@@ -5,7 +5,7 @@ import { Modal } from "./Modal";
 function ViewMore({openModal}) {
 
   return <ViewMoreStyled>
-    <Button onClick={openModal}>I'm a Model</Button>
+    <Button onClick={openModal}>View More</Button>
     
   </ViewMoreStyled>
 }
@@ -15,11 +15,14 @@ display: flex;
 justify-content:center ;
 align-items: center;
 height: 10px;
+margin-top: 10px;
+margin-bottom: 30px;
+
 `
 
 const Button = styled.div`
  
-width: max-content;
+  width: max-content;
   display: inline-block;
   background: var(--color-primary);
   padding: 0.75rem 1.2rem;

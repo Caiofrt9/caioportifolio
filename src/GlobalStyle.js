@@ -51,9 +51,11 @@ h1{
 }
 
 section {
-  margin-top: 9rem;
+  margin-top: 8rem;
   height: 100vh;
 }
+
+
 
 section > h2,section > h5{
   text-align: center;

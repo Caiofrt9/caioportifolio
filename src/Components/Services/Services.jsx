@@ -31,11 +31,6 @@ const Services = () => {
               <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
             </li>
 
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-
 
             <li>
               <BiCheck className='service__list-icon'/>
@@ -83,11 +78,6 @@ const Services = () => {
               <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
             </li>
 
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-
 
             <li>
               <BiCheck className='service__list-icon'/>
@@ -114,11 +104,6 @@ const Services = () => {
           </div>
 
           <ul className="service__list">
-
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
 
             <li>
               <BiCheck className='service__list-icon'/>
