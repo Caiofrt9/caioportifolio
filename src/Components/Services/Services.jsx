@@ -18,34 +18,36 @@ const Services = () => {
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Web Design.</p>
             </li>
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>App Design.</p>
             </li>
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Graphic Design.</p>
             </li>
 
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Logo and Brand Identity Design</p>
             </li>
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Design development consulting.</p>
             </li>
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Information architecture.</p>
             </li>
+
+            
           </ul>
         </article>
 
@@ -60,83 +62,42 @@ const Services = () => {
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Web Development </p>
             </li>
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Responsive Development</p>
             </li>
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Creating features </p>
             </li>
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Creative Problem Solving.</p>
             </li>
 
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Ongoing Website Maintenance.</p>
             </li>
 
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+              <p>Search Engine Optimization (SEO).</p>
             </li>
 
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
+            
           </ul>
         </article>
 
         {/* END OF WEB DEVELOPEMENT */}
 
-        <article className="service">
-          <div className="service__head">
-            <h3>Content Creation</h3>
-          </div>
-
-          <ul className="service__list">
-
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-
-
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-            </li>
-          </ul>
-        </article>
+        
       </div>
     </section>
   )

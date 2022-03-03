@@ -44,15 +44,21 @@ const ModalContent = styled.div`
   justify-content: center;
   align-items: center;
   line-height: 1.8;
-  color: #141414;
+  color: #fff;
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   button {
     padding: 10px 24px;
     background: #141414;
     color: #fff;
     border: none;
+  }
+
+  .modal__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
   }
 `
 
@@ -77,12 +83,18 @@ export const Modal = ({ showModal, setShowModal, project }) => {
             <ModalContent>
               <h1>{project.title}</h1>
               <p>{project.description}</p>
-              <a href=" " download className="btn">
-                DownLoad CV
-              </a>
-              <a href="#contact" className="btn btn-primary">
-                Let's Talk
-              </a>
+              <div className="modal__links">
+                <a
+                  href="https://github.com/caiofrt9"
+                  target="_blank"
+                  className="btn"
+                >
+                  GitHub
+                </a>
+                <a href="#contact" className="btn btn-primary">
+                  See Online
+                </a>
+              </div>
             </ModalContent>
 
             <CloseModalButton

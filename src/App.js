@@ -6,6 +6,7 @@ import Contact from './Components/contact/Contact'
 import Experience from './Components/Experience/Experience'
 import Services from './Components/Services/Services'
 import Portifolio from './Components/Portifolio/Portifolio'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
       <Services />
       <Contact />
+      <Footer />
     </div>
   )
 }

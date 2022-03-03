@@ -15,13 +15,14 @@ import avatar2 from "../../../src/img/project.jfif"
 
 const Portifolio = () => {
   const [showModal, setShowModal] = useState(false)
+  const [modalData, setModalData] = useState(null);
 
   const openModal = () => {
     setShowModal(prev => !prev)
   }
   return (
     <section id='portifolio'>
-      <h5>Review from Clients</h5>
+      <h5>My Recent Work</h5>
       <h2>Projects</h2>
 
       <Swiper className="container testimonials__container"

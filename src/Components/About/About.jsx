@@ -25,13 +25,13 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon"/>
               <h5>Experience</h5>
-              <small> 1 Years Working</small>
+              <small> 6 Months Develping</small>
             </article>
 
             <article className="about__card">
               <FiUsers className="about__icon"/>
               <h5>Clients</h5>
-              <small> 200+ Worldwide</small>
+              <small> 2 Clients In</small>
             </article>
 
             <article className="about__card">
@@ -41,7 +41,9 @@ const About = () => {
             </article>
           </div>
 
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and sadasaddasddasdsdasadsadadsadadsdsdasdsdasdasddasdsaddy</p>
+          <p>I am a web developer for 6 months, with experience in creating responsive and intelligent applications.
+          I'm always looking for updates, specializations, news and challenges in the technology area.
+          </p>
 
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
 

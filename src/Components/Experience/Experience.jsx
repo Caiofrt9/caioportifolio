@@ -33,13 +33,13 @@ const Experience = () => {
           <article className="experience__details">
           <BsPatchCheckFill/>
           <h4>Bootstrap</h4>
-          <small className="text-light">Experienced</small>
+          <small className="text-light">Basic</small>
           </article>
 
           <article className="experience__details">
           <BsPatchCheckFill/>
           <h4>TypeScript</h4>
-          <small className="text-light">Experienced</small>
+          <small className="text-light">Basic</small>
           </article>
 
           <article className="experience__details">
@@ -52,44 +52,40 @@ const Experience = () => {
 
       { /*=======END OF FRONT END========*/ }
 
-      <div className="experience__frontend">
-        <h3>Front End Development</h3>
+      <div className="experience__backend">
+        <h3>Back End Development</h3>
         <div className="experience__content">
           <article className="experience__details">
           <BsPatchCheckFill/>
-          <h4>HTML</h4>
-          <small className="text-light">Experienced</small>
+          <h4>Node JS</h4>
+          <small className="text-light">Basic</small>
           </article>
 
           <article className="experience__details">
           <BsPatchCheckFill/>
-          <h4>CSS</h4>
-          <small className="text-light">Intermediate</small>
+          <h4>Mongo DB</h4>
+          <small className="text-light">Basic</small>
           </article>
 
           <article className="experience__details">
           <BsPatchCheckFill/>
-          <h4>JavaScript</h4>
-          <small className="text-light">Intermediate</small>
+          <h4>PHP</h4>
+          <small className="text-light">Basic</small>
           </article>
 
           <article className="experience__details">
           <BsPatchCheckFill/>
-          <h4>Bootstrap</h4>
-          <small className="text-light">Experienced</small>
+          <h4>MySQL</h4>
+          <small className="text-light">Basic</small>
           </article>
-
+          
           <article className="experience__details">
           <BsPatchCheckFill/>
-          <h4>TypeScript</h4>
-          <small className="text-light">Experienced</small>
+          <h4>Python</h4>
+          <small className="text-light">Basic</small>
           </article>
 
-          <article className="experience__details">
-          <BsPatchCheckFill/>
-          <h4>ReactJS</h4>
-          <small className="text-light">Intermediate</small>
-          </article>
+         
         </div>
       </div>
 
