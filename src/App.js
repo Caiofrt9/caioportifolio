@@ -1,5 +1,4 @@
 import MainArea from './Components/MainArea'
-import Header from './Components/Header/Header'
 import Nav from './Components/Nav/Nav'
 import About from './Components/About/About'
 import Contact from './Components/contact/Contact'

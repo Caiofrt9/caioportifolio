@@ -1,59 +1,52 @@
-import React, {useState} from "react";
+import React from 'react'
 import './portifolio.css'
-import ViewMore from "./ViewMoreButtun";
-import { projects } from "../../constants/projects";
-import Modal from './Modal'
 
-
-import { Pagination, Scrollbar} from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css/pagination'
-
-import avatar2 from "../../../src/img/project.jfif"
-
+import img from '../../img/projeto1.png'
+import img2 from '../../img/projeto2.png'
+// s
 
 const Portifolio = () => {
-  const [showModal, setShowModal] = useState(false)
-  const [modalData, setModalData] = useState(null);
-
-  const openModal = () => {
-    setShowModal(prev => !prev)
-  }
   return (
-    <section id='portifolio'>
+    <section id="portifolio">
       <h5>My Recent Work</h5>
-      <h2>Projects</h2>
+      <h2>Portfolioo</h2>
 
-      <Swiper className="container testimonials__container"
-       // install Swiper modules
-      modules={[ Pagination, Scrollbar]}
-      spaceBetween={50}
-      slidesPerView={2}
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      >
-        {projects.map(project => (
-
-        <SwiperSlide className="portfolio__card">
-          <img className="portifolio__img" src={project.image}/>
-          
-
-          <div className="portfolio__card-btn">
-          <ViewMore openModal={openModal} />
-          <Modal showModal={showModal} setShowModal={setShowModal} project={project}/>
+      <div className='container portifolio__container'>
+      <article className='portifolio__item'>
+          <div className='portifolio__item-image'>
+            <img src={img} alt=""></img>  
           </div>
+          <h3>Christimas Website</h3>
+          <div className='portfolio__item-cta'>
+          <a href='https://github.com/Caiofrt9/ChristmasWebsite' className='btn' target="_blank" rel="noreferrer">Github</a>
+          <a href='https://caiofrt9.github.io/ChristmasWebsite/' className='btn btn-primary' target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>    
 
-        </SwiperSlide>
-        ))}
+        <article className='portifolio__item'>
+          <div className='portifolio__item-image'>
+            <img src={img2} alt=""></img>  
+          </div>
+          <h3>Expense Tracker</h3>
+          <div className='portfolio__item-cta'>
+          <a href='https://github.com/Caiofrt9/expense-tracker' className='btn' target="_blank" rel="noreferrer">Github</a>
+          <a href='https://expense-tracker-git-main-caiofrt9.vercel.app' className='btn btn-primary' target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>  
 
-       
-      </Swiper>
+        {/* <article className='portifolio__item'>
+          <div className='portifolio__item-image'>
+            <img src={img}></img>  
+          </div>
+          <h3>This is a portifolio item title</h3>
+          <div className='portfolio__item-cta'>
+          <a href='https://github.com' className='btn' target="_blank">Github</a>
+          <a href='https://github.com' className='btn btn-primary' target="_blank">Live Demo</a>
+          </div>
+        </article>   */}
+      </div>
     </section>
   )
 }
 
 export default Portifolio
-
-
-
