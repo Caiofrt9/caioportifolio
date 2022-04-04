@@ -4,7 +4,8 @@ import './portifolio.css'
 import img from '../../img/projeto1.png'
 import img2 from '../../img/projeto2.png'
 import img3 from '../../img/projeto3.png'
-// s
+import img4 from '../../img/projeto4.png'
+import img5 from '../../img/projeto5.png'
 
 const Portifolio = () => {
   return (
@@ -46,7 +47,29 @@ const Portifolio = () => {
           <a href='https://github.com/Caiofrt9/ChristmasWebsite' className='btn' target="_blank" rel="noreferrer">Github</a>
           <a href='https://caiofrt9.github.io/ChristmasWebsite/' className='btn btn-primary' target="_blank" rel="noreferrer">Live Demo</a>
           </div>
-        </article>   
+        </article> 
+
+        <article className='portifolio__item'>
+          <div className='portifolio__item-image'>
+            <img src={img5} alt=""></img>  
+          </div>
+          <h3>Github Api</h3>
+          <div className='portfolio__item-cta'>
+          <a href='https://github.com/Caiofrt9/github-api' className='btn' target="_blank" rel="noreferrer">Github</a>
+          <a href='https://fancy-smakager-e98c70.netlify.app' className='btn btn-primary' target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>
+
+        <article className='portifolio__item'>
+          <div className='portifolio__item-image'>
+            <img src={img4} alt=""></img>  
+          </div>
+          <h3>Pomo.Dev</h3>
+          <div className='portfolio__item-cta'>
+          <a href='https://github.com/Caiofrt9/pomodoro' className='btn' target="_blank" rel="noreferrer">Github</a>
+          <a href='https://clinquant-swan-06097c.netlify.app' className='btn btn-primary' target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>     
         
 
         {/* <article className='portifolio__item'>
