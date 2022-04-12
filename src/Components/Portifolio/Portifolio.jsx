@@ -6,6 +6,7 @@ import img2 from '../../img/projeto2.png'
 import img3 from '../../img/projeto3.png'
 import img4 from '../../img/projeto4.png'
 import img5 from '../../img/projeto5.png'
+import img6 from '../../img/projeto6.png'
 
 const Portifolio = () => {
   return (
@@ -16,9 +17,20 @@ const Portifolio = () => {
     <div className='container portifolio__container'>
 
       <article className='portifolio__item'>
-          <div className='portifolio__item-image'>
-            <img src={img3} alt=""></img>  
+        <div className='portifolio__item-image'>
+          <img src={img6} alt=""></img>  
+        </div>
+          <h3>Commerce.dev</h3>
+          <div className='portfolio__item-cta'>
+          <a href='https://github.com/Caiofrt9/Ecommecer-dev' className='btn' target="_blank" rel="noreferrer">Github</a>
+          <a href='https://loquacious-mochi-7f20a5.netlify.app' className='btn btn-primary' target="_blank" rel="noreferrer">Live Demo</a>
           </div>
+      </article> 
+
+      <article className='portifolio__item'>
+        <div className='portifolio__item-image'>
+            <img src={img3} alt=""></img>  
+        </div>
           <h3>Deliciouuss</h3>
           <div className='portfolio__item-cta'>
           <a href='https://github.com/Caiofrt9/deliciouuss' className='btn' target="_blank" rel="noreferrer">Github</a>
