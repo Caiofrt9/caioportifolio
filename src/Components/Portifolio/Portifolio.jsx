@@ -11,8 +11,8 @@ import img6 from '../../img/projeto6.png'
 const Portifolio = () => {
   return (
     <section id="portifolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolioo</h2>
+      <h5>Meus projetos recentes</h5>
+      <h2>Portfolio</h2>
 
     <div className='container portifolio__container'>
 

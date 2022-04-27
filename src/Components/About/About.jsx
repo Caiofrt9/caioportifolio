@@ -3,14 +3,14 @@ import './about.css'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
-import me from '../../img/img.png'
+import me from '../../img/user.jpg'
 
 
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h5>Me conheça melhor </h5>
+      <h2>Sobre mim</h2>
 
       <div className="container about__container">
       <div className="about__me">
@@ -24,28 +24,28 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon"/>
-              <h5>Experience</h5>
-              <small> 6 Months Develping</small>
+              <h5>Experência</h5>
+              <small> 8 meses de desenvolvimento</small>
             </article>
 
             <article className="about__card">
               <FiUsers className="about__icon"/>
-              <h5>Clients</h5>
-              <small> 2 Clients In</small>
+              <h5>Clientes</h5>
+              <small> 2 CLientes</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon"/>
-              <h5>Projects</h5>
-              <small> 20+ Completed</small>
+              <h5>Problemas</h5>
+              <small> 100+ Problemas solucionados</small>
             </article>
           </div>
 
-          <p>I am a web developer for 6 months, with experience in creating responsive and intelligent applications.
-          I'm always looking for updates, specializations, news and challenges in the technology area.
+          <p>
+          Sou desenvolvedor web há 8 meses, com experiência na criação de aplicativos responsivos e inteligentes. Estou sempre em busca de atualizações, especializações, novidades e desafios na área de tecnologia :)
           </p>
 
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">Fale comigo</a>
 
         </div> 
       </div>
