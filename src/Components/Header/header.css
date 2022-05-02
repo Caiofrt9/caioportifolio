@@ -43,8 +43,6 @@ h5 {
 
 @media screen and (max-width: 1100px){
   .header__socials{
-    left: 0;
-    bottom: 23rem;
-    position: absolute;
+    display: none;
   }
 }

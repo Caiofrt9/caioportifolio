@@ -28,10 +28,6 @@ const MainAreaStyled = styled.div`
   }
 
   @media screen and (max-width: 1100px) {
-    video {
-      width: 100%;
-      height: 85%;
-    }
   }
 `
 
