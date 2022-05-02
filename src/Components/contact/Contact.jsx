@@ -28,15 +28,13 @@ const Contact = () => {
        <article className="contact__option">
          <MdOutlineEmail className="contact__option-icon"/>
          <h4>Email</h4>
-         <h5>silvacaio295@gmail.com</h5>
-         <a href="mailto:silvacaio295@gmail.com" target='_blank' className="btn btn-primary">Envie uma mensagem</a>
+         <a href="mailto:silvacaio295@gmail.com" target='_blank' className="btn btn-primary">Enviar mensagem</a>
        </article>
 
        <article className="contact__option">
          <BsWhatsapp className="contact__option-icon"/>
          <h4>WhatsApp</h4>
-         <h5>(94) 999033173</h5>
-         <a href="https://api.whatsapp.com/send?phone=+559499033173" target='_blank' className="btn btn-primary">Envie uma mensagem</a>
+         <a href="https://api.whatsapp.com/send?phone=+559499033173" target='_blank' className="btn btn-primary">Enviar mensagem</a>
        </article>
 
       </div>

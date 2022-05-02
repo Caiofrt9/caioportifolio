@@ -19,20 +19,19 @@ const MainAreaStyled = styled.div`
   height: 85vh;
   overflow: hidden;
 
-  .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: -400px;
-    top: -300px;
-  }
-
   video {
     position: absolute; /*  absolute ou fixed */
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     opacity: 0.7;
+  }
+
+  @media screen and (max-width: 1100px) {
+    video {
+      width: 100%;
+      height: 85%;
+    }
   }
 `
 
